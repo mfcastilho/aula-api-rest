@@ -14,6 +14,6 @@ clientRoutes.put("/cliente/:id", verifyClientFields, verifyIfClientExists, updat
 
 clientRoutes.get("/cliente/:id", verifyIfClientExists, getClientController.handle);
 
-clientRoutes.delete("/cliente/:id", deleteClientController.handle);
+clientRoutes.delete("/cliente/:id", verifyIfClientExists, deleteClientController.handle);
 
 module.exports = clientRoutes;
