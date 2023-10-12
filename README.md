@@ -22,6 +22,9 @@ O projeto segue a arquitetura em camadas para manter o código organizado e sepa
 
 - **Middlewares**: Realiza validações e verificações intermediárias para garantir a segurança e a integridade dos dados.
 
+  ![Minha Imagem](https://github.com/mfcastilho/aula-api-rest/blob/master/docs/fluxo-arquitetura-em-camadas.png)
+
+
 ## Endpoints da API
 
 A API oferece os seguintes endpoints para gerenciar produtos:
