@@ -80,6 +80,9 @@ Siga estas etapas para executar o projeto em seu ambiente local:
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](https://github.com/mfcastilho/aula-api-rest/blob/master/LICENSE) para obter detalhes.
 
+## Material de Estudos
+- <a href="https://mf-programacao.notion.site/API-REST-2e64be29aa3f43218757bd8c6e1474f0?pvs=25">Link</a>
+
 ## Contato
 
 Para dúvidas ou mais informações, entre em contato com a equipe de desenvolvimento:
