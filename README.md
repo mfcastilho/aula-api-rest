@@ -78,7 +78,7 @@ Siga estas etapas para executar o projeto em seu ambiente local:
 
 ## Licença
 
-Este projeto está licenciado sob a Licença XYZ. Consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
+Este projeto está licenciado sob a Licença XYZ. Consulte o arquivo [LICENSE](https://github.com/mfcastilho/aula-api-rest/blob/master/LICENSE) para obter detalhes.
 
 ## Contato
 
