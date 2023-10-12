@@ -75,6 +75,10 @@ Siga estas etapas para executar o projeto em seu ambiente local:
 4. Inicie o servidor: `npm run dev`
 5. Acesse a API em `http://localhost:3000`
 
+
+## Material de Estudos
+- <a href="https://mf-programacao.notion.site/API-REST-2e64be29aa3f43218757bd8c6e1474f0?pvs=25">Link</a>
+
 ## Contribuindo
 
 - Contribuições são bem-vindas! Se você deseja contribuir para o projeto, siga as diretrizes de contribuição e envie um pull request.
@@ -82,9 +86,6 @@ Siga estas etapas para executar o projeto em seu ambiente local:
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](https://github.com/mfcastilho/aula-api-rest/blob/master/LICENSE) para obter detalhes.
-
-## Material de Estudos
-- <a href="https://mf-programacao.notion.site/API-REST-2e64be29aa3f43218757bd8c6e1474f0?pvs=25">Link</a>
 
 ## Contato
 
