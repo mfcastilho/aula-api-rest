@@ -64,8 +64,8 @@ A API oferece os seguintes endpoints para gerenciar produtos:
 
 ## Configuração do Banco de Dados
 
-- Antes de executar o projeto, certifique-se de configurar o banco de dados 'aula_api_rest'e criar as tabelas do banco de dados. Os scripts de criação do banco de dados e da tabela está no arquivo dump.sql que se encontra dentro da pasta database. A pasta database se encontra dentro da pasta configs.
-- Para inserir as informações de configuração do banco de dados, crie um arquivo .env tendo como modelo o arquivo .env.example e lá insira as informações necessárias para acessar o seu banco de dados local.
+- Antes de executar o projeto, certifique-se de criar o banco de dados 'aula_api_rest'e criar as tabelas do banco de dados. Os scripts de criação do banco de dados e da tabela está no arquivo dump.sql que se encontra dentro da pasta database. A pasta database se encontra dentro da pasta configs.
+- Certifique-se de configurar o banco de dados. Para inserir as informações de configuração do banco de dados, crie um arquivo .env tendo como modelo o arquivo .env.example e lá insira as informações necessárias para acessar o seu banco de dados local.
 
 ## Executando o Projeto
 
