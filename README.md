@@ -58,8 +58,9 @@ A API oferece os seguintes endpoints para gerenciar produtos:
 
 - Node.js
 - Express.js
-- Banco de Dados: 'aula_api_rest'
-- Outras dependências (listar as dependências relevantes)
+- Postgres
+- dotenv
+- nodemon
 
 ## Configuração do Banco de Dados
 
