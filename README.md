@@ -1,4 +1,4 @@
-# Programa Intercâmbio iFood - Projeto Aula de API REST
+# Aula API REST -  Programa Intercâmbio iFood
 
 Este é um projeto prático, guiadas por mim, e desenvolvido como parte das aulas de revisão de API REST para o projeto intercâmbio iFood desenvolvido pela Cubos Academy. O projeto segue a arquitetura em camadas e tem como objetivo criar uma API REST para gerenciar clientes em um banco de dados chamado 'aula_api_rest'. O sistema oferece operações básicas de CRUD (Create, Read, Update, Delete) para clientes.
 
@@ -58,12 +58,14 @@ A API oferece os seguintes endpoints para gerenciar produtos:
 
 - Node.js
 - Express.js
-- Banco de Dados: 'aula_api_rest'
-- Outras dependências (listar as dependências relevantes)
+- Postgres
+- dotenv
+- nodemon
 
 ## Configuração do Banco de Dados
 
-Antes de executar o projeto, certifique-se de configurar o banco de dados 'aula_api_rest' e as informações de conexão no arquivo de configuração apropriado.
+- Antes de executar o projeto, certifique-se de criar o banco de dados 'aula_api_rest'e criar as tabelas do banco de dados. Os scripts de criação do banco de dados e da tabela está no arquivo dump.sql que se encontra dentro da pasta database. A pasta database se encontra dentro da pasta configs.
+- Certifique-se de configurar o banco de dados. Para inserir as informações de configuração do banco de dados, crie um arquivo .env tendo como modelo o arquivo .env.example e lá insira as informações necessárias para acessar o seu banco de dados local.
 
 ## Executando o Projeto
 
