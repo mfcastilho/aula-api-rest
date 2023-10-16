@@ -20,7 +20,7 @@ O projeto segue a arquitetura em camadas para manter o código organizado e sepa
 
 - **Configs (Configurações)**: Lida com as configurações do banco de dados e outras configurações necessárias da aplicação.
 
-- **Middlewares (Intermediário)**: Realiza validações e verificações intermediárias para garantir a segurança e a integridade dos dados.
+- **Middleware (Intermediário)**: Realiza validações e verificações intermediárias para garantir a segurança e a integridade dos dados.
 
   ![Minha Imagem](https://github.com/mfcastilho/aula-api-rest/blob/master/docs/fluxo-arquitetura-em-camadas.png)
 
