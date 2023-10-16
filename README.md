@@ -10,17 +10,17 @@ Programa realizado pelo Time de Comunidade junto com o Time de Experiência do E
 
 O projeto segue a arquitetura em camadas para manter o código organizado e separar as responsabilidades. Aqui está uma visão geral das camadas:
 
-- **Controller(Controlador)**: Responsável por receber as informações de uma requisição HTTP e retornar uma resposta. Controla o fluxo da aplicação.
+- **Controller (Controlador)**: Responsável por receber as informações de uma requisição HTTP e retornar uma resposta. Controla o fluxo da aplicação.
 
-- **Routes(Rotas)**: Gerencia as rotas da API, mapeando as URLs para as funções do controlador correspondentes.
+- **Routes (Rotas)**: Gerencia as rotas da API, mapeando as URLs para as funções do controlador correspondentes.
 
-- **Services(Serviço)**: Lida com a lógica de negócios da aplicação, aplicando regras e processamento de dados.
+- **Services (Serviço)**: Lida com a lógica de negócios da aplicação, aplicando regras e processamento de dados.
 
-- **Repository(Repositório)**: Responsável por fazer as requisições ao banco de dados 'aula_api_rest' para persistência e recuperação de dados.
+- **Repository (Repositório)**: Responsável por fazer as requisições ao banco de dados 'aula_api_rest' para persistência e recuperação de dados.
 
-- **Configs(Configurações)**: Lida com as configurações do banco de dados e outras configurações necessárias da aplicação.
+- **Configs (Configurações)**: Lida com as configurações do banco de dados e outras configurações necessárias da aplicação.
 
-- **Middlewares(Intermediário)**: Realiza validações e verificações intermediárias para garantir a segurança e a integridade dos dados.
+- **Middlewares (Intermediário)**: Realiza validações e verificações intermediárias para garantir a segurança e a integridade dos dados.
 
   ![Minha Imagem](https://github.com/mfcastilho/aula-api-rest/blob/master/docs/fluxo-arquitetura-em-camadas.png)
 
