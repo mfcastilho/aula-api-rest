@@ -46,7 +46,7 @@ const clientRepository = {
                where ${field} = $1 
                returning *;
           `;
-          const { row: client} = await connection.query(sql, [value]);
+          const { rows: client} = await connection.query(sql, [value]);
 
           return client[0];
      },
