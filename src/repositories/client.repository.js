@@ -3,65 +3,77 @@ const connection = require("../configs/connection/index");
 
 const clientRepository = {
 
-     
-     findAll: async function() {
+     create: async function(clientData) {
           
-          const sql = 'SELECT * FROM clients';
+          const { name, email, cpf, age } = clientData;
 
-          const response = await connection.query(sql);
+          const sql = `
+          insert into clients
+          (name, email, cpf, age)
+          values
+          ($1, $2, $3, $4) returning *;
+          `
+          const client = await connection.query(sql, [name, email, cpf, age]);
 
-          return response.rows;
+          return client.rows[0];
      },
 
+     findAll: async function() {
+
+          const sql = `
+          select * from clients;
+          `
+          const clients = await connection.query(sql);
+
+          return clients.rows;
+     },
 
      findByPk: async function(id) {
 
-          const sql = 'SELECT * FROM clients WHERE id = $1';
+          const sql = `
+          select * from clients where id = $1;
+          `;
 
-          const response = await connection.query(sql, [id]);
+          const { rows:client } = await connection.query(sql, [id]);
 
-          return response.rows[0];
+          return client[0];
      },
-     
-     
-     create: async function(clientData) {
 
-          const { email, name, cpf, age } = clientData;
+     findOne: async function(field, value) {
 
           const sql = `
-          INSERT INTO clients 
-          (email, name, cpf, age) 
-          VALUES 
-          ($1, $2, $3, $4) RETURNING *`;
-
-          const response = await connection.query(sql, [email, name, cpf, age])
-
-          return response.rows[0];
+               select * from clients
+               where ${field} = $1 
+               returning *;
+          `;
+          connection.query(sql, [value]);
      },
-
 
      update: async function(id, clientData) {
 
-          const { email, name, cpf, age } = clientData;
+          const { name, email, cpf, age } = clientData;
 
-          const sql = 'UPDATE clients SET email = $1, name = $2, cpf = $3, age = $4 WHERE id = $5 RETURNING *';
+          const sql = `
+          update clients
+          set email = $1, name = $2, cpf = $3, age = $4
+          where id = $5 returning *
+          `;
 
-          const values = [email, name, cpf, age, id];
+          const { rows: clientUpdated } = await connection.query(sql, [email, name, cpf, age, id]);
 
-          const response = await connection.query(sql, values);
-
-          return response.rows[0];
+          return clientUpdated[0];
      },
 
      destroy: async function(id) {
 
-          const sql = 'DELETE FROM clients WHERE id = $1 RETURNING *';
+          const sql = `
+               delete from clients
+               where id = $1 returning *;
+          `;
+          const { rows: clientDeleted } = await connection.query(sql, [id]);
 
-          const response = await connection.query(sql, [id]);
-
-          return response.rows[0];
+          return clientDeleted[0];
      }
-     
 }
 
 module.exports = clientRepository;

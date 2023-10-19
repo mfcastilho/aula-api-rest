@@ -1,9 +1,10 @@
 
 
-function verifyClientFields (req, res, next) {
-     const { email, name, cpf, age } = req.body;
+const verifyClientFields = function(req, res, next) {
 
-     if(!email || !name || !cpf || !age) return res.status(400).json({error: "Todos os campos são obrigatórios."});
+     const { name, email, cpf, age } = req.body;
+
+     if(!name || !email || !cpf || !age) return res.status(400).json({error: "Todos os campos são obrigatórios."});
 
      return next();
 }

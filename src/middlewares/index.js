@@ -1,8 +1,12 @@
 const verifyClientFields = require("./verifyClientFields");
-const verifyIfClientExists = require("./verifyIfClientExists");
+const verifyCpf = require("./verifyCpf");
+const verifyIfIdIsNumber = require("./verifyIfIdIsNumber");
+const verifyClientsExists = require("./verifyIfClientsExists");
 
 
 module.exports = {
      verifyClientFields,
-     verifyIfClientExists
+     verifyCpf,
+     verifyIfIdIsNumber,
+     verifyClientsExists
 }
