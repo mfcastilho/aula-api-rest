@@ -12,10 +12,9 @@ const updateClientController = {
                const clientUpdated = await service.execute(id, { email, name, cpf, age });
 
                return res.status(200).json(clientUpdated);
+
+          }catch(error) {
                return res.status(500).json({error: "Erro interno do servidor."});
-
-               return  res.status(500).json({error: "Erro interno do servidor."});
-
           }
      }
 }
