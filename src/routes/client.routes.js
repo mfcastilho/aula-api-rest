@@ -12,7 +12,7 @@ const { createClientController,
 const { verifyfEmailExists, 
         verifyClientFields, 
         verifyIfCpfExists, 
-        validateCpf, 
+        verifyCpfFormat, 
         verifyIfIdIsANumber, 
         verifyIfClientExists, 
         verifyEmailFormat } = require("../middlewares");
@@ -24,7 +24,7 @@ clientRoutes.post(
      verifyfEmailExists, 
      verifyIfCpfExists, 
      verifyEmailFormat, 
-     validateCpf, 
+     verifyCpfFormat, 
      createClientController.handle
 );
 
@@ -48,12 +48,16 @@ clientRoutes.put(
      verifyfEmailExists, 
      verifyIfCpfExists, 
      verifyEmailFormat, 
-     validateCpf,
+     verifyCpfFormat,
       updateClientController.handle
 );
 
-clientRoutes.delete("/cliente/:id", verifyIfIdIsANumber, 
-verifyIfClientExists, deleteClientController.handle);
+clientRoutes.delete(
+     "/cliente/:id", 
+     verifyIfIdIsANumber, 
+     verifyIfClientExists, 
+     deleteClientController.handle
+);
 
 
 module.exports = clientRoutes;

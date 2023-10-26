@@ -1,4 +1,4 @@
-const validateCpf = require("./validateCpf");
+const verifyCpfFormat = require("./verifyCpfFormat");
 const verifyClientFields = require("./verifyClientFields");
 const verifyEmailFormat = require("./verifyEmailFormat");
 const verifyIfClientExists = require("./verifyIfClientExists");
@@ -13,7 +13,7 @@ module.exports = {
      verifyClientFields,
      verifyfEmailExists,
      verifyIfCpfExists,
-     validateCpf,
+     verifyCpfFormat,
      verifyIfIdIsANumber,
      verifyIfClientExists,
      verifyEmailFormat
