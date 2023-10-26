@@ -4,8 +4,6 @@ const clientRepository = {
 
      create: async function(clientData) {
 
-          const { email, name, cpf, age } = clientData;
-
           const sql = `
                insert into clients
                (email, name, cpf, age)
@@ -55,7 +53,7 @@ const clientRepository = {
 
      update: async function(id, clientData) {
 
-          const { email, name, cpf, age } = clientData;
+          const { name, email, cpf, age } = clientData;
 
           const sql = `
                update clients 

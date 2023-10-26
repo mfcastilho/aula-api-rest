@@ -1,5 +1,4 @@
-const { getClientService: service } = require("../services");
-
+const { getClientService:service } = require("../services");
 
 const getClientController = {
      async handle(req, res) {

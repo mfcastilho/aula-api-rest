@@ -7,7 +7,6 @@ const createClientService = {
           const clientCreated = await repository.create(clientData);
 
           return clientCreated;
-
      }
 }
 

@@ -1,9 +1,7 @@
-const express = require("express");
+const port = 3000;
 const app = express();
 
-const clientRoutes = require("./routes/client.routes")
-
-const port = 3000;
+const clientRoutes = require("./routes/client.routes");
 
 app.use(express.json());
 

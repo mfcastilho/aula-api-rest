@@ -1,6 +1,7 @@
 const repository = require("../repositories/client.repository"); 
 
-const getAllClientsService = {
+
+const getAllCLients = {
      async execute() {
 
           const clients = await repository.findAll();
@@ -9,4 +10,4 @@ const getAllClientsService = {
      }
 }
 
-module.exports = getAllClientsService;
+module.exports = getAllCLients;

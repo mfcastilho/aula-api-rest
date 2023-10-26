@@ -1,6 +1,7 @@
+
 # Aula API REST -  Programa Intercâmbio iFood
 
-Este é um projeto prático, guiadas por mim, e desenvolvido como parte das aulas de revisão de API REST para o projeto intercâmbio iFood desenvolvido pela Cubos Academy. O projeto segue a arquitetura em camadas e tem como objetivo criar uma API REST para gerenciar clientes em um banco de dados chamado 'aula_api_rest'. O sistema oferece operações básicas de CRUD (Create, Read, Update, Delete) para clientes.
+Este é um projeto prático, guiado por mim, e desenvolvido como parte das aulas de revisão de API REST para o projeto intercâmbio iFood desenvolvido pela Cubos Academy. O projeto segue a arquitetura em camadas e tem como objetivo criar uma API REST para gerenciar clientes em um banco de dados chamado 'aula_api_rest'. O sistema oferece operações básicas de CRUD (Create, Read, Update, Delete) para clientes.
 
 ## Sobre o programa Intercâmbio iFood
 
@@ -10,18 +11,19 @@ Programa realizado pelo Time de Comunidade junto com o Time de Experiência do E
 
 O projeto segue a arquitetura em camadas para manter o código organizado e separar as responsabilidades. Aqui está uma visão geral das camadas:
 
-- **Controller**: Responsável por receber as informações de uma requisição HTTP e retornar uma resposta. Controla o fluxo da aplicação.
+- **Controllers (Controladores)**: Responsável por receber as informações de uma requisição HTTP e retornar uma resposta. Controla o fluxo da aplicação.
 
-- **Routes**: Gerencia as rotas da API, mapeando as URLs para as funções do controlador correspondentes.
+- **Routes (Rotas)**: Gerencia as rotas da API, mapeando as URLs para as funções do controlador correspondentes.
 
-- **Services**: Lida com a lógica de negócios da aplicação, aplicando regras e processamento de dados.
+- **Services (Serviços)**: Lida com a lógica de negócios da aplicação, aplicando regras e processamento de dados.
 
-- **Repository**: Responsável por fazer as requisições ao banco de dados 'aula_api_rest' para persistência e recuperação de dados.
+- **Repository (Repositórios)**: Responsável por fazer as requisições ao banco de dados 'aula_api_rest' para persistência e recuperação de dados.
 
-- **Configurações**: Lida com as configurações do banco de dados e outras configurações necessárias da aplicação.
+- **Configs (Configurações)**: Lida com as configurações do banco de dados e outras configurações necessárias da aplicação.
 
-- **Middlewares**: Realiza validações e verificações intermediárias para garantir a segurança e a integridade dos dados.
+- **Middlewares (Intermediários)**: Realiza validações e verificações intermediárias para garantir a segurança e a integridade dos dados.
 
+## Fluxograma
   ![Minha Imagem](https://github.com/mfcastilho/aula-api-rest/blob/master/docs/fluxo-arquitetura-em-camadas.png)
 
 
