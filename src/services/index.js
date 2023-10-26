@@ -1,18 +1,15 @@
-const createClienteService = require("./createClienteService");
-const getClientService = require("./getClientService");
-const getAllClientsService = require("./getAllClientsService");
-const updateClientService = require("./updateClientService");
+const createClientService = require("./createClientService");
 const deleteClientService = require("./deleteClientService");
-
+const getAllClientsService = require("./getAllClientsService");
+const getClientService = require("./getClientService");
+const updateClientService = require("./updateClientService");
 
 
 
 module.exports = {
-     createClienteService,
-     updateClientService,
      getAllClientsService,
+     createClientService,
      getClientService,
+     updateClientService,
      deleteClientService
 }
-
-

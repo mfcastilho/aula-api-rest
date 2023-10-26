@@ -1,6 +1,6 @@
 const repository = require("../repositories/client.repository");
 
-const GetClientService = {
+const getClientService = {
      async execute(id) {
 
           const client = await repository.findByPk(id);
@@ -9,4 +9,4 @@ const GetClientService = {
      }
 }
 
-module.exports = GetClientService;
+module.exports = getClientService;

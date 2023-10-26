@@ -1,19 +1,59 @@
 const { Router } = require("express");
 
-const { verifyClientFields, verifyIfClientExists } = require("../middlewares");
-
-const { createClientController, updateClientController, getAllClientsController, getClientController, deleteClientController } = require("../controllers");
-
 const clientRoutes = Router();
 
-clientRoutes.get("/cliente", getAllClientsController.handle);
 
-clientRoutes.post("/cliente", verifyClientFields, createClientController.handle);
+const { createClientController, 
+        getAllClientsController, 
+        getClientController, 
+        updateClientController,
+        deleteClientController } = require("../controllers");
 
-clientRoutes.put("/cliente/:id", verifyClientFields, verifyIfClientExists, updateClientController.handle);
+const { verifyfEmailExists, 
+        verifyClientFields, 
+        verifyIfCpfExists, 
+        validateCpf, 
+        verifyIfIdIsANumber, 
+        verifyIfClientExists, 
+        verifyEmailFormat } = require("../middlewares");
 
-clientRoutes.get("/cliente/:id", verifyIfClientExists, getClientController.handle);
 
-clientRoutes.delete("/cliente/:id", verifyIfClientExists, deleteClientController.handle);
+clientRoutes.post(
+     "/cliente", 
+     verifyClientFields, 
+     verifyfEmailExists, 
+     verifyIfCpfExists, 
+     verifyEmailFormat, 
+     validateCpf, 
+     createClientController.handle
+);
+
+clientRoutes.get(
+     "/cliente", 
+     getAllClientsController.handle
+);
+
+clientRoutes.get(
+     "/cliente/:id", 
+     verifyIfIdIsANumber, 
+     verifyIfClientExists, 
+     getClientController.handle
+);
+
+clientRoutes.put(
+     "/cliente/:id", 
+     verifyIfIdIsANumber, 
+     verifyIfClientExists,
+     verifyClientFields, 
+     verifyfEmailExists, 
+     verifyIfCpfExists, 
+     verifyEmailFormat, 
+     validateCpf,
+      updateClientController.handle
+);
+
+clientRoutes.delete("/cliente/:id", verifyIfIdIsANumber, 
+verifyIfClientExists, deleteClientController.handle);
+
 
 module.exports = clientRoutes;

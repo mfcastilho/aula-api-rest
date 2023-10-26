@@ -1,4 +1,4 @@
-const repository = require("../repositories/client.repository");
+const repository = require("../repositories/client.repository"); 
 
 const getAllClientsService = {
      async execute() {

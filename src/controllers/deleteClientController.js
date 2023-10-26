@@ -1,6 +1,5 @@
 const { deleteClientService: service } = require("../services");
 
-
 const deleteClientController = {
      async handle(req, res) {
 
@@ -8,12 +7,11 @@ const deleteClientController = {
 
                const { id } = req.params;
 
-               const clienteDeleted = await service.execute(id);
+               const clientDeleted = await service.execute(id);
 
-               return res.status(200).json(clienteDeleted);
+               return res.status(200).json(clientDeleted);
                
           } catch (error) {
-               console.log(error);
                return res.status(500).json({error: "Erro interno do servidor"});
           }
      }

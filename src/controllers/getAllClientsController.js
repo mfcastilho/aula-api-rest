@@ -1,9 +1,11 @@
-const { getAllClientsService: service } = require("../services")
+const { getAllClientsService: service } = require("../services");
+
 
 const getAllClientsController = {
      async handle(req, res) {
 
           try {
+
                const clients = await service.execute();
 
                return res.status(200).json(clients);
@@ -11,8 +13,6 @@ const getAllClientsController = {
           } catch (error) {
                return res.status(500).json({error: "Erro interno do servidor"});
           }
-
-
      }
 }
 

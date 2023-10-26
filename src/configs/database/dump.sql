@@ -1,8 +1,9 @@
-create database aula_api_rest;
+create database db_aula3_api_rest;
 
-create table clientes(
+create table clients(
 	id serial primary key,
-  nome varchar(100) not null,
-  cpf char(11) not null,
-  idade integer not null
+  name varchar(100) not null,
+  email varchar(100) not null unique,
+  cpf char(11) not null unique,
+  age integer not null
 );
