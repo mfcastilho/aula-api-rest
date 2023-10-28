@@ -1,4 +1,3 @@
-
 # Aula API REST -  Programa Intercâmbio iFood
 
 Este é um projeto prático, guiado por mim, e desenvolvido como parte das aulas de revisão de API REST para o projeto intercâmbio iFood desenvolvido pela Cubos Academy. O projeto segue a arquitetura em camadas e tem como objetivo criar uma API REST para gerenciar clientes em um banco de dados chamado 'aula_api_rest'. O sistema oferece operações básicas de CRUD (Create, Read, Update, Delete) para clientes.
